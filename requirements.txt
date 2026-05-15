@@ -2,3 +2,5 @@ numpy
 matplotlib
 jupyter
 nbconvert
+pandas
+kagglehub
