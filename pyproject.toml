@@ -1,0 +1,22 @@
+#####################################
+# python project configuration file #
+##################################### 
+[build-system]
+# The necessary background tools required to compile the C++ code
+requires = ["scikit-build-core>=0.10", "pybind11>=2.13"] 
+# Bridges C++ code to work with existing Python code
+build-backend = "scikit_build_core.build" 
+
+[project]
+# Custom Python library info
+name = "ocular_cpp"
+version = "0.1.0"
+# required dependencies to run the custom library
+dependencies = ["numpy", "scikit-learn"]
+
+# Specific settings for scikit_build_core 
+[tool.scikit-build]
+# Turn off C++ debugging, debug in Python
+cmake.build-type = "Release"
+cmake.version = ">=3.15"
+ninja.version = ">=1.10"

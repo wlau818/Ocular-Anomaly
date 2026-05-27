@@ -1,6 +1,19 @@
-numpy
-matplotlib
-jupyter
-nbconvert
-pandas
+# editable install of your C++ module
+-e .
+
+# C++ build tooling (needed for direct cmake runs)
+pybind11>=2.13
+
+# Data loading
 kagglehub
+
+# Data manipulation
+pandas
+numpy
+
+# ML / splitting
+scikit-learn
+
+# Jupyter
+jupyter
+ipywidgets
