@@ -5,7 +5,7 @@
 pybind11>=2.13
 
 # Data loading
-kagglehub
+kagglehub==0.3.9
 
 # Data manipulation
 pandas
