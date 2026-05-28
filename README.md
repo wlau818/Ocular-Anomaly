@@ -7,8 +7,8 @@ A deep learning pipeline for detecting glaucoma and other ocular diseases from r
 
 ## What it does
 
-- Classifies retinal fundus images as **healthy or non-healthy**
-- Identifies specific conditions including **glaucoma**, diabetic retinopathy, cataract, AMD, hypertension, and pathological myopia
+- Classifies retinal fundus images as **healthy or non-healthy** in the sense of having or not having glaucoma since there are other diseases that commonly get misinterpreted as glaucoma.  
+- Identifies if an image contains **glaucoma** or not. For instance, if the image has cataracts it will not define it as having glaucoma. 
 - Uses a native C++ preprocessing engine to load, resize, and normalize images at high throughput
 - Produces Grad-CAM heatmaps to highlight which regions of the image influenced the model's decision
 
