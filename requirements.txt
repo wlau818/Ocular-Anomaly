@@ -17,3 +17,10 @@ scikit-learn
 # Jupyter
 jupyter
 ipywidgets
+
+# Deep learning
+torch
+torchvision
+
+# Image display / visualization
+matplotlib
