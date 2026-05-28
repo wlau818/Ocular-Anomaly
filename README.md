@@ -174,5 +174,3 @@ See `.github/workflows/OcularCI.yml` for the full pipeline.
 
 - Alexandria Lim
 - Winnie Lau
-
-NYU — Computer Science & Cybersecurity
