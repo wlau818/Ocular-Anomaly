@@ -16,13 +16,3 @@ pybind11_add_module(ocular_cpp src/main.cpp)
 
 # Link the external OpenCV graphics libraries to our custom module
 target_link_libraries(ocular_cpp PRIVATE ${OpenCV_LIBS})
-
-# Make this cross platform compatible
-if(WIN32)
-    # Explicitly define the hidden OpenCV .dll files at runtime
-    add_custom_command(TARGET ocular_cpp POST_BUILD
-        COMMAND ${CMAKE_COMMAND} -E copy_if_different
-        $<TARGET_FILE:OpenCV::OpenCV>
-        $<TARGET_FILE_DIR:ocular_cpp>
-    )
-endif()
