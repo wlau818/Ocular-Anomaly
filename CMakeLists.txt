@@ -7,13 +7,8 @@ project(ocular_cpp LANGUAGES CXX)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-# Find and load packages 
-execute_process(
-  COMMAND "${PYTHON_EXECUTABLE}" -m pybind11 --cmakedir
-  OUTPUT_VARIABLE pybind11_DIR
-  OUTPUT_STRIP_TRAILING_WHITESPACE
-)
-find_package(pybind11 REQUIRED)# pybind11 library is needed to link C++ code to Python
+# Find and load packages. pybind11 library is needed to link C++ code to Python
+find_package(pybind11 REQUIRED CONFIG)
 find_package(OpenCV REQUIRED)
 
 # Combine our src file into a compiled Python module named "ocular_cpp"
