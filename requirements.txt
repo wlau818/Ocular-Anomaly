@@ -24,3 +24,12 @@ torchvision
 
 # Image display / visualization
 matplotlib
+
+# Progress tracking
+tqdm
+
+# Validation Utilities
+validators
+
+# PyTorch Dependency Fix
+sympy==1.14.0

@@ -41,5 +41,7 @@ jobs:
       - name: Execute Notebook Testing
         env:
           CI_RUN: "true"
+          KAGGLE_USERNAME: ${{ secrets.KAGGLE_USERNAME }}
+          KAGGLE_KEY: ${{ secrets.KAGGLE_KEY }}
         run: |
           jupyter nbconvert --to notebook --execute Ocular_Anomaly_Detection.ipynb --output output_verify.ipynb
